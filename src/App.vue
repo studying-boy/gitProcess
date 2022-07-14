@@ -6,5 +6,11 @@
 <script>
 export default {
   name: 'App',
+  mounted() {
+    var a = 1;
+    const b;
+    b = 2;
+    console.log(1111);
+  }
 }
 </script>
