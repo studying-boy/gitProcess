@@ -1,9 +1,12 @@
 {
   "name": "vite-app3",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "prepare":"husky install",
+    "lint": "lint-staged"
   },
   "dependencies": {
     "@vitejs/plugin-vue": "^2.3.2",
@@ -20,22 +23,11 @@
     "vite": "^1.0.0-rc.13",
     "vite-plugin-style-import": "^2.0.0"
   },
-  // "config": {
-  //   "commitizen": {
-  //     "path": "./node_modules/cz-customizable"
-  //   }
-  // },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-stage"
-    }
-  },
   "lint-staged": {
-    // 此处可以配置文件夹和文件类型的范围
     "src/**/*.{jsx,txs,ts,js,json,css,vue}": [
-      "prettier --write", // 先使用prettier进行格式化
-      "eslint --fix", // 再使用eslint进行自动修复
-      "git add" // 所有通过的话执行git
+      "prettier --write",
+      "eslint --fix",
+      "git add"
     ]
   }
 }
