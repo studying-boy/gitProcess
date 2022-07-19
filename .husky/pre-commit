@@ -1,4 +1,4 @@
 #!/bin/sh
-#echo 'husky: start check your code，please wait...'
+echo 'husky: start check your code，please wait...'
 . "$(dirname "$0")/_/husky.sh"
-npm run lint
+# npm run lint
