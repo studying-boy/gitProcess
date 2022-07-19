@@ -1,18 +1,21 @@
 <template>
-
-
-  <img alt="Vue logo" src="./assets/logo.png" /    >
-  {{          }} 
+  <div>
+    <img
+      alt="Vue logo"
+      src="./assets/logo.png"
+    >
+    {{ }}
+  </div>
 </template>
 
 <script>
 export default {
   name: 'App',
-  mounted() {
-    var a = 1;
-    const b;
-    b = 2;
-    console.log(1111);
-  }
-}
+  mounted () {
+    const a = 1;
+    if (a === 1) {
+      console.info(1111);
+    }
+  },
+};
 </script>

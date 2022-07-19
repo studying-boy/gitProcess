@@ -5,9 +5,7 @@ module.exports = {
     parser: '@typescript-eslint/parser',
   },
   env: {
-    node: true,
     browser: true,
-    jquery: true,
   },
   extends: [
     'standard',
@@ -16,25 +14,6 @@ module.exports = {
   plugins: [
     'vue', 'html',
   ],
-  globals: {
-    __PUBLISH_ENV__: true,
-    __VERSION__: true,
-    __API_HOST__: true,
-    __SSO_HOST__: true,
-    __DOMAIN__: true,
-    __PRODUCT_ID__: true,
-    __ENABLE_LOCAL_LOGIN__: true,
-    __AGILEBI_TITLE__: true,
-    __ENABLE_RC__: true,
-    __ENABLE_DASHBOARD_SCREENSHOT__: true,
-    __ENABLE_DP__: true,
-    __ENABLE_FEEDBACK__: true,
-    __ENABLE_EXT_WIDGET__: true,
-    __ENABLE_PUBLISH__: true,
-    describe: true,
-    it: true,
-    expect: true,
-  },
   rules: {
     // 不属于standard的规定
     // 多行时强制要求添加尾逗号。
