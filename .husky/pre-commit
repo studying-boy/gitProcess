@@ -1,4 +1,5 @@
 #!/bin/sh
+echo ‘11111’
 . "$(dirname -- "$0")/_/husky.sh"
-
+echo ‘2222’
 npm run lint

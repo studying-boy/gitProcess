@@ -1,30 +1,27 @@
-'use strict';
-
 module.exports = {
-  extends: ['@commitlint/config-angular'],
-  rules: {
-    'type-enum': [
-      2,
-      'always',
-      [
-        ':sparkles:',
-        ':bug:',
-        ':ambulance:',
-        ':lipstick:',
-        ':construction:',
-        ':memo:',
-        ':bookmark:',
-        ':hammer:',
-        ':rocket:',
-        ':tada:',
-      ],
-    ],
-    'subject-case': [0, 'never'],
-  },
-  parserPreset: {
-    parserOpts: {
-      headerPattern: /^(:\w*:)(?:\((.*?)\))?\s((?:.*(?=\())|.*)(?:\(#(\d*)\))?/,
-      headerCorrespondence: ['type', 'scope', 'subject', 'ticket'],
-    },
-  },
-};
+  extends: ['@commitlint/config-conventional'],
+  prompt: {
+    questions: {
+     type: {
+      description: '选择你要提交的类型:',
+      enum: {
+       feat: {
+        description: '新功能',
+        title: 'Features',
+        emoji: '✨'
+       },
+       fix: {
+        description: '修复相关bug',
+        title: 'Bug Fixes',
+        emoji: '🐛'
+       },
+       docs: {
+        description: '文档更改',
+        title: 'Documentation',
+        emoji: '📚'
+       }
+      }
+     }
+    }
+   }
+ }
