@@ -32,11 +32,6 @@
     "vite": "^1.0.0-rc.13",
     "vite-plugin-style-import": "^2.0.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint"
-    }
-  },
   "lint-staged": {
     "src/**/*.{jsx,txs,ts,js,json,css,vue}": [
       "eslint --fix"
