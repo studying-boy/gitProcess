@@ -23,6 +23,7 @@
     "@vue/compiler-sfc": "^3.0.4",
     "commitizen": "^4.2.5",
     "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^6.9.1",
     "eslint": "^8.20.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-html": "^7.0.0",
