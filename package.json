@@ -18,6 +18,8 @@
     "vue-router": "^4.0.15"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
     "@commitlint/cz-commitlint": "^17.0.3",
     "@typescript-eslint/parser": "^5.30.7",
     "@vue/compiler-sfc": "^3.0.4",
