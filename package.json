@@ -1,7 +1,6 @@
 {
   "name": "vite-app3",
   "version": "1.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -46,7 +45,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "node_modules/cz-customizable"
     },
     "cz-customizable": {
       "config": ".cz-config.js"
