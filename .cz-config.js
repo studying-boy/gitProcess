@@ -63,11 +63,9 @@ module.exports = {
 		// used if allowCustomScopes is true
 		customScope: '请输入文件修改范围(可选):',
 		subject: '请简要描述提交(必填):\n',
-		body: '请输入详细描述，使用 "|" 实现换行输入(可选):\n',
 		breaking: '列出所有BREAKING CHANGES(可选):\n',
-		footer: '请输入要关闭的issue，例如: #31, #34 (可选):\n',
 		confirmCommit: '确定提交此说明吗？'
 	},
-	allowCustomScopes: false,
+	allowCustomScopes: true,
 	allowBreakingChanges: ['feat', 'fix']
 };
