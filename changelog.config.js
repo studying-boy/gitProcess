@@ -23,12 +23,12 @@ module.exports = {
       value: 'docs'
     },
     feat: {
-      description: 'A new feature',
+      description: '新功能',
       emoji: '🎸',
       value: 'feat'
     },
     fix: {
-      description: 'A bug fix',
+      description: '修复bug',
       emoji: '🐛',
       value: 'fix'
     },
@@ -38,7 +38,7 @@ module.exports = {
       value: 'perf'
     },
     refactor: {
-      description: 'A code change that neither fixes a bug or adds a feature',
+      description: '代码重构',
       emoji: '💡',
       value: 'refactor'
     },
@@ -58,7 +58,7 @@ module.exports = {
       value: 'test'
     },
     messages: {
-      type: 'Select the type of change that you\'re committing:',
+      type: '选择你要提交的类型:',
       customScope: 'Select the scope this component affects:',
       subject: 'Write a short, imperative mood description of the change:\n',
       body: 'Provide a longer description of the change:\n ',
