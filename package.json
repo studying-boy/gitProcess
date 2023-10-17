@@ -42,7 +42,8 @@
   },
   "lint-staged": {
     "src/**/*.{jsx,txs,ts,js,json,css,vue}": [
-      "eslint --fix"
+      "eslint --fix",
+      "git add"
     ]
   },
   "config": {
