@@ -15,8 +15,8 @@ export default {
   mounted () {
     const a = 1;
     if (a === 1) {
-      
-      console.info(1111)       ;
+
+      console.info(1111)    ;
     }
   },
 };
