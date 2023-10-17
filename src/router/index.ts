@@ -6,16 +6,12 @@ const routes = [
   },
   {
     path: '/home',
-    component: () => import('../components/home.vue')
+    component: () => import('../components/home.vue'),
   },
-]
-
-
-
-
+];
 
 const router = createRouter({
-  history: createWebHashHistory(), //替代之前的mode，是必须的
-  routes
+  history: createWebHashHistory(), // 替代之前的mode，是必须的
+  routes,
 });
 export default router;
