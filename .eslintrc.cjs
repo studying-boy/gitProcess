@@ -1,51 +1,29 @@
 module.exports = {
-  root: true,
-  // parser: 'babel-eslint',
-  parserOptions: {
-    parser: '@typescript-eslint/parser',
-  },
   env: {
     browser: true,
+    node: true,
+    es6: true
   },
-  extends: [
-    'standard',
-    'plugin:vue/strongly-recommended',
-  ],
-  plugins: [
-    'vue', 'html',
-  ],
+  plugins: ['prettier'],
+  extends: ['plugin:vue/essential', '@vue/airbnb', 'prettier'],
+  globals: {
+    '@': false
+  },
+  parserOptions: {
+    parser: 'babel-eslint'
+  },
   rules: {
-    // 不属于standard的规定
-    // 多行时强制要求添加尾逗号。
-    'comma-dangle': ['error', 'always-multiline'],
-    // 禁止使用info、warn和error之外的console
-    'no-console': ['error', { allow: ['info', 'warn', 'error'] }],
-    // 禁用未声明的变量
-    'no-undef': 'error',
-    // require semicolons at the end of statements
-    semi: ['error', 'always'],
-    // require default cases in switch statements
-    'default-case': 'error',
-    // 注释前后的空行
-    'lines-around-comment': [
-      'error',
-      {
-        beforeBlockComment: false,
-        beforeLineComment: false,
-      },
-    ],
-    // disallows unnecessary semicolons
-    'no-extra-semi': 'error',
-    'node/no-callback-literal': 'off',
-
-    // vue 编写规范
-    // 历史问题太多，暂时只能把该规则设置为off状态，等所有风格处理好再打开或者设置为warn状态
-    'vue/no-mutating-props': 'off',
-    // error 规则
-    'vue/no-side-effects-in-computed-properties': 'off',
-    'vue/no-use-v-if-with-v-for': ['error', { allowUsingIterationVar: true }],
-    'no-async-promise-executor': 'off',
-    'prefer-regex-literals': 'off',
-    'vue/no-unused-vars': ['error', { ignorePattern: '^_' }],
-  },
-};
+    'max-len': 0,
+    'linebreak-style': 0, // 不校验换行符
+    semi: ['error', 'never'], // 不使用分号
+    'no-debugger': 0,
+    'no-console': 0,
+    'no-new': 0,
+    'no-underscore-dangle': 0,
+    'prefer-promise-reject-errors': 0,
+    'no-param-reassign': 0,
+    'no-extend-native': 0,
+    'import/prefer-default-export': 0, // 禁用强制使用默认导出
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }] // 禁止引入未添加到依赖中的库
+  }
+}

@@ -15,39 +15,39 @@ module.exports = {
 		{
 			value: ':lipstick: style',
 			name: '💄 代码风格变更'
-    },
-    {
-      value: ':construction: WIP',
-      name: '🚧 工作进行中'
-    },
+		},
+		{
+			value: ':construction: WIP',
+			name: '🚧 工作进行中'
+		},
 		{
 			value: ':hammer: refactor',
 			name: '🔨 重构'
 		},
-    {
-      value: ':zap: perf',
-      name: '⚡ 性能优化'
-    },
-    {
-      value: ':white_check_mark: test',
-      name: '✅ 测试'
-    },
-    {
-      value: ':rewind: revert',
-      name: '⏪️ 回退'
-    },
-    {
-      value: ':package: build',
-      name: '📦 打包构建'
-    },
-    {
-      value: ':rocket: chore',
-      name: '🚀 构建/工程依赖/工具'
-    },
-    {
-      value: ':construction_worker: ci',
-      name: '👷 CI 配置变更'
-    }
+		{
+			value: ':zap: perf',
+			name: '⚡ 性能优化'
+		},
+		{
+			value: ':white_check_mark: test',
+			name: '✅ 测试'
+		},
+		{
+			value: ':rewind: revert',
+			name: '⏪️ 回退'
+		},
+		{
+			value: ':package: build',
+			name: '📦 打包构建'
+		},
+		{
+			value: ':rocket: chore',
+			name: '🚀 构建/工程依赖/工具'
+		},
+		{
+			value: ':construction_worker: ci',
+			name: '👷 CI 配置变更'
+		}
 	],
 	scopes: [],
 	scopeOverrides: {
@@ -69,7 +69,7 @@ module.exports = {
 		confirmCommit: '确定提交此说明吗？'
 	},
 	allowCustomScopes: false,
-  allowBreakingChanges: ['feat', 'fix'],
-  // skip any questions you want
-  skipQuestions: ['body', 'footer'],
+	allowBreakingChanges: ['feat', 'fix'],
+	// skip any questions you want
+	skipQuestions: ['body', 'footer'],
 };
