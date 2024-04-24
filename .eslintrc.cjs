@@ -15,7 +15,7 @@ module.exports = {
   rules: {
     'max-len': 0,
     'linebreak-style': 0, // 不校验换行符
-    semi: ['error', 'never'], // 不使用分号
+    semi: ['error', 'always'], // 总是使用分号
     'no-debugger': 0,
     'no-console': 0,
     'no-new': 0,
